@@ -1,0 +1,150 @@
+# Directory containing MusicXML files to be analized. By default, the extension should
+# be .xml, but you can change it via `musif.musicxml.constants.MUSICXML_FILE_EXTENSION`
+# Note that MusicXML files supported are limited to Finale exported ones.
+xml_dir: null
+
+# Directory containing MuseScore files to be analyzed. By default, the extension should
+# be .xml, but you can change it via `musif.musescore.constants.MUSESCORE_FILE_EXTENSION`
+# If only musescore_dir is give, musif will try to convert the files to MusicXML using
+# musescore -- see `mscore_exe` setting.
+# If xml_dr is given, musescore files are only used if one of the following features are
+# requested: [ harmonic, scale_relative ]. In this case, only the harmonic annotations
+# are ridden from MuseScore files.
+musescore_dir: null
+  
+# Path to the binary of musescore. Used in case only MuseScore files are provided to
+# convert them to MusicXML. Note that most of the features won't work with those files.
+# Prefer using Finale MusicXML files, instead.
+# This option can be:
+# a) null -> ms3 library will try to find the musescore binary by itself
+# c) string -> the path to the mscore executable
+# b) list or tuple -> each element is a string as in `subprocess.run()` use it for remote
+#    server processing such as `xvfb-run -a mscore`
+mscore_exec: null
+
+# Directory to keep .pkl files if caching is enabled. null for disabling cache.
+# See `Caching` page for more info
+cache_dir: null
+  
+# If not null, musif will export MusicXML files to dataframes pickled in this directory.
+# See `musif.cache.utils.store_score_df` for more info.
+# They are useful for allowing interoperability with data science packages.
+dfs_dir: null
+
+# Boolean flag to expand repetitions of the music score or not.
+expand_repeats: false
+
+# Size of windows (in number of measures) when extracting features of the score in a.
+# Each row of the resulting DataFrame will correspond to each window.
+# If null, only one window is extracted, with the  size of the whole score.
+# A `WindowId` column is always added, containing the number of the window in the score
+# to which a row of the dataframe refers to.
+# Note that the standard `Id` column referred to the MusicXML files is always present.
+window_size: null
+
+# Size of overlap (in measures) beatween each window. Considered only if `window_size` is
+# null
+overlap: 2
+
+# Number of parallel processes to be used as defined by joblib: 
+# 1 => no parallel. 2 => 2 processes. -1 => all available virtual cores. -2 => all
+# available virtual cores except 1
+parallel: 1
+
+# Directory to save the logs files, level for logging in the console (console_level) and
+# inthe log file (file_level)
+log:
+  file_path: ./musif.log
+  file_level: DEBUG
+  console_level: ERROR
+
+# Modules that are run once for every score. This distinction is important only when
+# `window_size` > 1
+# They are processed first and used by the other features so disabling them might result
+# in errors when extracting features.
+# Dependencies may be expressed in the `musif_dependencies` property of the feature, see
+# for instance `musif.extract.features.density.__init__.py`
+basic_modules: []
+  # Possible values:
+  # - scoring
+
+# Modules to be extracting from scores. Order is important, so last ones will be
+# processed last. Some of them might depends on others.
+# For example, density model relies on the number of note, which is computed in core.
+# Dependencies may be expressed in the `musif_dependencies` property of the feature, see
+# for instance `musif.extract.features.density.__init__.py`
+# To disable/enable a module, simply comment the line.
+features: ['core']
+  # Possible values:
+  # - core
+  # - ambitus
+  # - melody
+  # - tempo
+  # - density
+  # - texture
+  # - harmony # require MuseScore files with harmonic annotations
+  # - lyrics
+  # - scale
+  # - scale_relative # require MuseScore files with harmonic annotations
+  # - key
+  # - dynamics    
+  # - rhythm
+  # - music21
+  # - jsymbolic
+
+# The list of packages/modules where basic features are. See page `Custom Features` for
+# more info
+basic_modules_addresses: ["musif.extract.basic_modules"]
+
+# The list of packages/modules where features are. See page `Custom Features` for
+# more info
+feature_modules_addresses: ["musif.extract.features"]
+
+# List of hooks executed before of creating the read-only cache objects.
+# See `Caching` page for more info
+precache_hooks: []
+
+# Maximum RAM allowed to the Java Virtual Machine for each file (if using parallel,
+# this parameter is multiplied for the number of processes)
+jsymbolic_max_ram: "4g"
+
+# Path to file containing jsymbolic configuration; if None (default) the default
+# jSymbolic configuration is used
+jsymbolic_config_file: null
+
+# jsymbolic needs conversion to MIDI and this is not feasible if repeat marks are
+# not properly set up in the input file; when this option is true, if exporting to MIDI fails, we retry after having removed all the repeat signs
+# If this option is true, the caching system should not be used.
+jsymbolic_try_without_repeats: false
+
+# remove notes and objects referred to percussion instruments
+# (musif stock features do not work with percussion instruments)
+remove_unpitched_objects: true
+
+# Filter to select only some instruments to be processed for each score. 
+# If the filter is None (disabling all parts), the program will extract all parts.
+parts_filter: []
+  # Possible Values
+  # - vnI
+  # - vnII
+  # - obI
+  # - obII
+  # - va
+  # - bs
+  # - sop
+  # - ten
+  # - alt
+  # - bar
+  # - bass
+  # - bbar
+
+# Used to split the possible layers present depending on the instrument name
+split_keywords: []
+  # Possible Values
+  # - woodwind
+  # - brass
+  # - wind
+  # - viola
+  # - cello
+  # - bass
+  # - oboi

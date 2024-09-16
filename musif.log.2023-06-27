@@ -1,0 +1,7 @@
+2023-06-29 10:47:01,183 INFO                                                --- Analyzing scores ---
+                                                
+2023-06-29 10:47:03,038 DEBUG Extracting part "flI" core features.
+2023-06-29 10:47:03,040 DEBUG Extracting part "flII" core features.
+2023-06-29 10:47:03,042 DEBUG Extracting part "flII" core features.
+2023-06-29 10:47:03,045 DEBUG Extracting part "flII" core features.
+2023-06-29 10:47:03,047 DEBUG Extracting score "/Users/ivansimo/Desktop/ICCMU/ICCMU_CODE/musicXXI/MUSIF/data/AnatomyComposerAttributionMIDIFilesAndFeatureData_1_0/MIDI/Ib_noPen/01 Alba O felix Maria.mid" musif.extract.features.core.handler features.

@@ -1,0 +1,81 @@
+metadata_dir: ./metadata
+xml_dir: data/xml
+musescore_dir: data/musescore
+cache_dir: data/cache
+expand_repeats: false
+internal_data_dir: ./internal_data # custom config
+dfs_dir: data/dfs
+window_size: null
+overlap: 0
+parallel: 1
+log:
+  file_path: logs/musif_test.log
+  file_level: INFO
+  console_level: INFO
+basic_modules_addresses: ["feature_extraction.custom_basic_modules", "musif.extract.basic_modules"]
+
+feature_modules_addresses: 
+  - "musif.extract.features"
+  # - "feature_extraction.custom_features_module"
+  # - "custom_features.voice_silence_beats"
+# precache_hooks: ["feature_extraction.hooks.only_theme_a"]
+# precache_hooks: ["feature_extraction.hooks.only_first_phrase"]
+
+theme_a_metadata: "theme_a_per_aria.csv"
+
+first_phrase_metadata: "first_phrase_per_aria.csv"
+first_phrase_measure: "first_phrase_measure"
+length_first_phrase: "length_first_phrase"
+
+
+basic_modules:
+  - scoring
+  # - file_name # custom feature
+  # - metadata # custom feature
+  # - composer # custom feature
+  # - librettist # custom feature
+
+features:
+  - core
+  # - ambitus
+  # - melody
+  # - tempo
+  # - density
+  # - texture
+  # - lyrics
+  # - scale
+  # - key
+  # - dynamics    
+  # - rhythm  
+  # - harmony
+  # - scale_relative
+  # - music21
+  # - jsymbolic
+  
+  # - dummy_feature_module # debug custom features
+  # - dummy_feature_package # debug custom features
+  # - single_class_feature # debug custom features
+
+split_keywords:  # Used to split the possible layers present depending on the instrument name
+  - woodwind
+  - guitar
+  - brass
+  - wind
+  - viola
+  - strings.cello
+  - bass
+  - oboi
+  
+parts_filter:
+  # - vnI
+  # - vnII
+  # - obI
+  # - obII
+  # - va
+  # - bs
+  # - sop
+  # - ten
+  # - alt
+  # - bar
+  # - bass
+  # - bbar

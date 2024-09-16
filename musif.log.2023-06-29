@@ -1,0 +1,59 @@
+2023-07-03 10:23:19,638 INFO                                                --- Analyzing scores ---
+                                                
+2023-07-03 10:23:19,881 DEBUG Extracting part "flI" musif.extract.basic_modules.scoring features.
+2023-07-03 10:23:19,881 DEBUG Extracting part "flI" musif.extract.basic_modules.scoring features.
+2023-07-03 10:23:19,881 DEBUG Extracting part "flI" musif.extract.basic_modules.scoring features.
+2023-07-03 10:23:19,881 DEBUG Extracting part "flI" musif.extract.basic_modules.scoring features.
+2023-07-03 10:23:19,881 DEBUG Extracting score "data/AnatomyComposerAttributionMIDIFilesAndFeatureData_1_0/MIDI/Ib_noPen/01 Alba O felix Maria.mid" musif.extract.basic_modules.scoring.handler features.
+2023-07-03 10:23:19,884 DEBUG Extracting part "flI" core features.
+2023-07-03 10:23:19,887 DEBUG Extracting part "flI" core features.
+2023-07-03 10:23:19,888 DEBUG Extracting part "flI" core features.
+2023-07-03 10:23:19,890 DEBUG Extracting part "flI" core features.
+2023-07-03 10:23:19,892 DEBUG Extracting score "data/AnatomyComposerAttributionMIDIFilesAndFeatureData_1_0/MIDI/Ib_noPen/01 Alba O felix Maria.mid" musif.extract.features.core.handler features.
+2023-07-03 10:23:19,907 DEBUG Extracting part "flI" ambitus features.
+2023-07-03 10:23:19,907 DEBUG Extracting part "flI" ambitus features.
+2023-07-03 10:23:19,907 DEBUG Extracting part "flI" ambitus features.
+2023-07-03 10:23:19,907 DEBUG Extracting part "flI" ambitus features.
+2023-07-03 10:23:19,907 DEBUG Extracting score "data/AnatomyComposerAttributionMIDIFilesAndFeatureData_1_0/MIDI/Ib_noPen/01 Alba O felix Maria.mid" musif.extract.features.ambitus.handler features.
+2023-07-03 10:23:21,404 DEBUG Extracting part "flI" melody features.
+2023-07-03 10:23:21,728 DEBUG Extracting part "flI" melody features.
+2023-07-03 10:23:22,042 DEBUG Extracting part "flI" melody features.
+2023-07-03 10:23:22,367 DEBUG Extracting part "flI" melody features.
+2023-07-03 10:23:22,683 DEBUG Extracting score "data/AnatomyComposerAttributionMIDIFilesAndFeatureData_1_0/MIDI/Ib_noPen/01 Alba O felix Maria.mid" musif.extract.features.melody.handler features.
+2023-07-03 10:23:22,697 DEBUG Extracting part "flI" tempo features.
+2023-07-03 10:23:22,703 DEBUG Extracting part "flI" tempo features.
+2023-07-03 10:23:22,707 DEBUG Extracting part "flI" tempo features.
+2023-07-03 10:23:22,712 DEBUG Extracting part "flI" tempo features.
+2023-07-03 10:23:22,716 DEBUG Extracting score "data/AnatomyComposerAttributionMIDIFilesAndFeatureData_1_0/MIDI/Ib_noPen/01 Alba O felix Maria.mid" musif.extract.features.tempo.handler features.
+2023-07-03 10:23:22,722 DEBUG Extracting part "flI" density features.
+2023-07-03 10:23:22,722 DEBUG Extracting part "flI" density features.
+2023-07-03 10:23:22,722 DEBUG Extracting part "flI" density features.
+2023-07-03 10:23:22,723 DEBUG Extracting part "flI" density features.
+2023-07-03 10:23:22,723 DEBUG Extracting score "data/AnatomyComposerAttributionMIDIFilesAndFeatureData_1_0/MIDI/Ib_noPen/01 Alba O felix Maria.mid" musif.extract.features.density.handler features.
+2023-07-03 10:23:22,724 DEBUG Extracting part "flI" texture features.
+2023-07-03 10:23:22,724 DEBUG Extracting part "flI" texture features.
+2023-07-03 10:23:22,724 DEBUG Extracting part "flI" texture features.
+2023-07-03 10:23:22,724 DEBUG Extracting part "flI" texture features.
+2023-07-03 10:23:22,724 DEBUG Extracting score "data/AnatomyComposerAttributionMIDIFilesAndFeatureData_1_0/MIDI/Ib_noPen/01 Alba O felix Maria.mid" musif.extract.features.texture.handler features.
+2023-07-03 10:23:22,725 DEBUG Extracting part "flI" lyrics features.
+2023-07-03 10:23:22,725 DEBUG Extracting part "flI" lyrics features.
+2023-07-03 10:23:22,725 DEBUG Extracting part "flI" lyrics features.
+2023-07-03 10:23:22,725 DEBUG Extracting part "flI" lyrics features.
+2023-07-03 10:23:22,725 DEBUG Extracting score "data/AnatomyComposerAttributionMIDIFilesAndFeatureData_1_0/MIDI/Ib_noPen/01 Alba O felix Maria.mid" musif.extract.features.lyrics.handler features.
+2023-07-03 10:23:22,726 DEBUG Extracting part "flI" scale features.
+2023-07-03 10:23:22,736 DEBUG Extracting part "flI" scale features.
+2023-07-03 10:23:22,745 DEBUG Extracting part "flI" scale features.
+2023-07-03 10:23:22,753 DEBUG Extracting part "flI" scale features.
+2023-07-03 10:23:22,761 DEBUG Extracting score "data/AnatomyComposerAttributionMIDIFilesAndFeatureData_1_0/MIDI/Ib_noPen/01 Alba O felix Maria.mid" musif.extract.features.scale.handler features.
+2023-07-03 10:23:22,798 DEBUG Extracting part "flI" key features.
+2023-07-03 10:23:22,798 DEBUG Extracting part "flI" key features.
+2023-07-03 10:23:22,798 DEBUG Extracting part "flI" key features.
+2023-07-03 10:23:22,798 DEBUG Extracting part "flI" key features.
+2023-07-03 10:23:22,798 DEBUG Extracting score "data/AnatomyComposerAttributionMIDIFilesAndFeatureData_1_0/MIDI/Ib_noPen/01 Alba O felix Maria.mid" musif.extract.features.key.handler features.
+2023-07-03 10:23:22,799 DEBUG Extracting part "flI" dynamics features.
+2023-07-03 10:23:22,800 DEBUG Extracting part "flI" dynamics features.
+2023-07-03 10:23:22,800 DEBUG Extracting part "flI" dynamics features.
+2023-07-03 10:23:22,800 DEBUG Extracting part "flI" dynamics features.
+2023-07-03 10:23:22,800 DEBUG Extracting score "data/AnatomyComposerAttributionMIDIFilesAndFeatureData_1_0/MIDI/Ib_noPen/01 Alba O felix Maria.mid" musif.extract.features.dynamics.handler features.
+2023-07-03 10:23:31,695 INFO                                                --- Analyzing scores ---
+                                                
