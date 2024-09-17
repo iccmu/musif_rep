@@ -5627,3 +5627,41 @@
 2024-09-16 09:47:26,858 DEBUG Extracting part "guitEl." core features.
 2024-09-16 09:47:26,858 DEBUG Extracting part "bar" core features.
 2024-09-16 09:47:26,859 DEBUG Extracting part "perc" core features.
+2024-09-16 10:09:27,389 INFO                                                --- Analyzing scores ---
+                                                
+2024-09-16 10:09:27,389 INFO                                                --- Analyzing scores ---
+                                                
+2024-09-16 10:09:31,708 DEBUG Extracting part "flI" musif.extract.basic_modules.scoring features.
+2024-09-16 10:09:31,708 DEBUG Extracting part "flI" musif.extract.basic_modules.scoring features.
+2024-09-16 10:09:31,708 DEBUG Extracting part "flII" musif.extract.basic_modules.scoring features.
+2024-09-16 10:09:31,708 DEBUG Extracting part "flII" musif.extract.basic_modules.scoring features.
+2024-09-16 10:09:31,708 DEBUG Extracting part "flII" musif.extract.basic_modules.scoring features.
+2024-09-16 10:09:31,708 DEBUG Extracting part "flII" musif.extract.basic_modules.scoring features.
+2024-09-16 10:09:31,708 DEBUG Extracting part "flII" musif.extract.basic_modules.scoring features.
+2024-09-16 10:09:31,708 DEBUG Extracting part "flII" musif.extract.basic_modules.scoring features.
+2024-09-16 10:09:31,708 DEBUG Extracting score "data/AnatomyComposerAttributionMIDIFilesAndFeatureData_1_0/MIDI/Anonymous/Anon 01 Ave verum corpus natum.mid" musif.extract.basic_modules.scoring.handler features.
+2024-09-16 10:09:31,708 DEBUG Extracting score "data/AnatomyComposerAttributionMIDIFilesAndFeatureData_1_0/MIDI/Anonymous/Anon 01 Ave verum corpus natum.mid" musif.extract.basic_modules.scoring.handler features.
+2024-09-16 10:09:31,715 DEBUG Extracting part "flI" core features.
+2024-09-16 10:09:31,715 DEBUG Extracting part "flI" core features.
+2024-09-16 10:09:31,720 DEBUG Extracting part "flII" core features.
+2024-09-16 10:09:31,720 DEBUG Extracting part "flII" core features.
+2024-09-16 10:09:31,726 DEBUG Extracting part "flII" core features.
+2024-09-16 10:09:31,726 DEBUG Extracting part "flII" core features.
+2024-09-16 10:09:31,731 DEBUG Extracting part "flII" core features.
+2024-09-16 10:09:31,731 DEBUG Extracting part "flII" core features.
+2024-09-16 10:09:31,736 DEBUG Extracting score "data/AnatomyComposerAttributionMIDIFilesAndFeatureData_1_0/MIDI/Anonymous/Anon 01 Ave verum corpus natum.mid" musif.extract.features.core.handler features.
+2024-09-16 10:09:31,736 DEBUG Extracting score "data/AnatomyComposerAttributionMIDIFilesAndFeatureData_1_0/MIDI/Anonymous/Anon 01 Ave verum corpus natum.mid" musif.extract.features.core.handler features.
+2024-09-16 10:09:31,854 DEBUG Extracting part "flI" ambitus features.
+2024-09-16 10:09:31,854 DEBUG Extracting part "flI" ambitus features.
+2024-09-16 10:09:31,855 DEBUG Extracting part "flII" ambitus features.
+2024-09-16 10:09:31,855 DEBUG Extracting part "flII" ambitus features.
+2024-09-16 10:09:31,855 DEBUG Extracting part "flII" ambitus features.
+2024-09-16 10:09:31,855 DEBUG Extracting part "flII" ambitus features.
+2024-09-16 10:09:31,855 DEBUG Extracting part "flII" ambitus features.
+2024-09-16 10:09:31,855 DEBUG Extracting part "flII" ambitus features.
+2024-09-16 10:09:31,856 DEBUG Extracting score "data/AnatomyComposerAttributionMIDIFilesAndFeatureData_1_0/MIDI/Anonymous/Anon 01 Ave verum corpus natum.mid" musif.extract.features.ambitus.handler features.
+2024-09-16 10:09:31,856 DEBUG Extracting score "data/AnatomyComposerAttributionMIDIFilesAndFeatureData_1_0/MIDI/Anonymous/Anon 01 Ave verum corpus natum.mid" musif.extract.features.ambitus.handler features.
+2024-09-16 10:09:32,267 DEBUG Extracting part "flI" melody features.
+2024-09-16 10:09:32,267 DEBUG Extracting part "flI" melody features.
+2024-09-16 10:09:32,983 DEBUG Extracting part "flII" melody features.
+2024-09-16 10:09:32,983 DEBUG Extracting part "flII" melody features.
